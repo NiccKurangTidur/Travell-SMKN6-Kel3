@@ -3,13 +3,13 @@ import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from 'react-icons/bs';
 
 const sliderData = [
   {
-    url: 'https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80',
+    url: 'https://c4.wallpaperflare.com/wallpaper/179/915/685/photography-water-reflection-bali-wallpaper-preview.jpg',
   },
   {
-    url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80',
+    url: 'https://c4.wallpaperflare.com/wallpaper/662/384/938/religious-wallpaper-preview.jpg',
   },
   {
-    url: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+    url: 'https://c4.wallpaperflare.com/wallpaper/5/962/326/clouds-landscape-nature-indonesia-wallpaper-preview.jpg',
   },
 ];
 

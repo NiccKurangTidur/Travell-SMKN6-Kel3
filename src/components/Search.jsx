@@ -48,6 +48,8 @@ const Search = () => {
                       <option>Borobudur</option>
                       <option>Bromo</option>
                       <option>Pulau Komodo</option>
+                      <option>Labuan Bajo</option>
+                      <option>Pulau Bali</option>
                   </select>
               </div>
               <div className='flex flex-col my-4'>
