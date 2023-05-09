@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className='flex w-full justify-between items-center h-20 px-4 absolute z-10 text-white'>
       <div>
-        <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>TravelWeb.</h1>
+        <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>Wonderful Indonesia.</h1>
       </div>
       <ul className='hidden md:flex'>
         <li>Home</li>
@@ -44,7 +44,7 @@ const Navbar = () => {
       {/* Mobile menu dropdown */}
       <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
         <ul>
-          <h1>TravelWeb.</h1>
+          <h1>wonderful indonesia.</h1>
           <li className='border-b'>Home</li>
           <li className='border-b'>Destinations</li>
           <li className='border-b'>Travel</li>
