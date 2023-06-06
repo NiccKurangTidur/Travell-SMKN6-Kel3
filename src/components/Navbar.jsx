@@ -29,7 +29,7 @@ const Navbar = () => {
         <li><Link to={`/`}>Home</Link></li>
         <li><Link to="/destinations">Destinations</Link></li>
         <li><Link to={`/travel`}>Travel</Link></li>
-        <li><Link to={`/view`}>View</Link></li>
+        <li><Link to={`/cbali`}>View</Link></li>
         <li><Link to={`/team`}>Team</Link></li>
       </ul>
       <div className='hidden md:flex'>

@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaPinterest,
   FaYoutube,} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -29,11 +30,11 @@ const Footer = () => {
             <li>Advertising</li>
           </ul>
           <ul className='text-right lg:flex'>
-            <li>Home</li>
-            <li>Destinations</li>
-            <li>Travel</li>
-            <li>View</li>
-            <li>Book</li>
+            <li><Link to={`/`}> Home</Link></li>
+            <li><Link to={`/destinations`}> Destination</Link></li>
+            <li><Link to={`/travel`}> Travel</Link></li>
+            <li><Link to={`/view`}> View</Link></li>
+            <li><Link to={`/team`}> Team</Link></li>
           </ul>
         </div>
       </div>
