@@ -1,5 +1,5 @@
 import React from 'react';
-import { RiCustomerService2Full, RiCustomerService2Fill } from 'react-icons/ri';
+import { RiCustomerService2Fill } from 'react-icons/ri';
 import { MdOutlineTravelExplore } from 'react-icons/md';
 
 const Search = () => {
@@ -14,8 +14,6 @@ const Search = () => {
 Indonesia is a country rich in natural beauty. From mountains, beautiful beaches, lush forests, to stunning waterfalls, Indonesia has everything you need for an extraordinary travel experience.
 
 .
-
-
           </p>
         </div>
         <div className='grid sm:grid-cols-2 gap-8 py-4'>
