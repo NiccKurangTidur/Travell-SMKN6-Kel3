@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import bali from '../assets/bali.jpg';
 import borobudur from '../assets/borobudur.jpg';
 import bromo from '../assets/bromo.jpg';

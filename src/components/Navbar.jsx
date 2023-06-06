@@ -10,6 +10,7 @@ import {
   FaPinterest,
   FaYoutube,
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -25,11 +26,11 @@ const Navbar = () => {
         <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>Wonderful Indonesia.</h1>
       </div>
       <ul className='hidden md:flex'>
-        <li>Home</li>
-        <li>Destinations</li>
-        <li>Travel</li>
-        <li>View</li>
-        <li>Book</li>
+        <li><Link to={`/`}>Home</Link></li>
+        <li><Link to="/destinations">Destinations</Link></li>
+        <li><Link to={`/travel`}>Travel</Link></li>
+        <li><Link to={`/view`}>View</Link></li>
+        <li><Link to={`/team`}>Team</Link></li>
       </ul>
       <div className='hidden md:flex'>
         <BiSearch className='' size={20} />
@@ -45,14 +46,14 @@ const Navbar = () => {
       <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
         <ul>
           <h1>wonderful indonesia.</h1>
-          <li className='border-b'>Home</li>
-          <li className='border-b'>Destinations</li>
-          <li className='border-b'>Travel</li>
-          <li className='border-b'>View</li>
-          <li className='border-b'>Book</li>
+          <li className='border-b'><Link to={`/`}>Home</Link></li>
+          <li className='border-b'><Link to="/destinations">Destinations</Link></li>
+          <li className='border-b'><Link to="/travel">Travel</Link></li>
+          <li className='border-b'><Link to="/view">View</Link></li>
+          <li className='border-b'><Link to="/team">Team</Link></li>
           <div className='flex flex-col'>
             <button className='my-6'>Search</button>
-            <button>Account</button>
+            <button><Link to="/login">Login</Link></button>
           </div>
           <div className='flex justify-between my-6'>
             <FaFacebook className='icon' />

@@ -1,24 +1,21 @@
 import React from 'react';
-import Carousel from './components/Carousel';
-import Destinations from './page/Destination';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Search from './components/Search';
-// import Login from './HalamanLogin/login';
-// import Register from './HalamanLogin/register';
-
-
+import Home from './page/home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Destinations from './page/Destinations';
+import Travel from './page/Travel';
+import View from './page/View';
+import Team from './page/Team';
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero/>
-      <Destinations/>
-      <Search/>
-      <Carousel/>
-      <Footer/>
-    </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/destinations" element={<Destinations/>} />
+          <Route path="/travel" element={<Travel/>} />
+          <Route path="/view" element={<View/>} />
+          <Route path="/team" element={<Team/>} />
+        </Routes>
+      </Router>
   );
 }
 
