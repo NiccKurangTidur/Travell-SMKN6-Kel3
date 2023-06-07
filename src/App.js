@@ -1,6 +1,8 @@
 import React from 'react';
-import Home from './page/home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// page
+import Home from './page/home';
 import Destinations from './page/Destinations';
 import Travel from './page/Travel';
 import View from './page/View';
@@ -13,6 +15,9 @@ import CSulawesi from './contentDestination/CSulawesi';
 import CSumatra from './contentDestination/CSumatra';
 import CKalimantan from './contentDestination/CKalimantan';
 import CBali from './contentDestination/CBali';
+
+// contentIsiDestination
+import LabuanBajo from './ContentIsiDestination/Bali/LabuanBajo';
 function App() {
   return (
       <Router>
@@ -30,6 +35,10 @@ function App() {
           <Route path="/csulawesi" element={<CSulawesi/>}/>
           <Route path="/csumatra" element={<CSumatra/>}/>
           <Route path="/ckalimantan" element={<CKalimantan/>}/>
+
+          {/* contentIsiDestination */}
+          <Route path="/labuanbajo" element={<LabuanBajo/>}/>
+
         </Routes>
       </Router>
   );

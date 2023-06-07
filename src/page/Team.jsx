@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Hero2 from '../components/Hero2';
 import Footer from '../components/Footer';
@@ -28,11 +29,27 @@ const Team = () => {
   const bottomFourMembers = teamMembers.slice(3);
 
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="relative">
-        <Hero2 />
-        <div className="absolute top-0 left-0 w-full">
+      <Hero2 />
+
+      <nav className="mx-14 mb-4">
+          <ol className="flex items-center text-gray-500">
+            <li>
+              <Link to="/" className="hover:text-gray-700">Home</Link>
+            </li>
+            <li>
+              <span className="mx-2">/</span>
+            </li>
+            <li>
+              <Link to="/team" className="hover:text-gray-700">Team</Link>
+            </li>
+          </ol>
+        </nav>
+
+
+      <div className="flex-grow">
+        <div className="container mx-auto py-8">
           <div className="flex flex-wrap justify-center">
             {topThreeMembers.map((member, index) => (
               <TeamMember key={index} name={member.name} image={member.image} />
@@ -46,6 +63,7 @@ const Team = () => {
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
