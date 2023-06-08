@@ -3,17 +3,17 @@ import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from 'react-icons/bs';
 
 const sliderData = [
   {
-    url: 'https://www.youtube.com/embed/vWWA98lpSZ4',
+    url: 'https://www.youtube.com/embed/CH92Ut4pYZ0',
   },
   {
-    url: 'https://www.youtube.com/embed/Z5NoQg8LdDk',
+    url: 'https://www.youtube.com/embed/CttCVgSNpaA',
   },
   {
-    url: 'https://www.youtube.com/embed/vWWA98lpSZ4',
+    url: 'https://www.youtube.com/embed/rX8Egi_qT5Q',
   },
 ];
 
-const Carousel = () => {
+const CarouselBali = () => {
   const [slide, setSlide] = useState(0);
   const length = sliderData.length;
 
@@ -66,4 +66,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselBali;

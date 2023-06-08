@@ -6,6 +6,8 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import Search from '../components/Search';
+import Selects from '../components/Select';
+import TitleSelect from '../components/TitleSelect';
 
 
 const Home = () => {
@@ -15,6 +17,8 @@ const Home = () => {
         <Hero/>
         <Destinations/>
         <Search/>
+        <TitleSelect/>
+        <Selects/>
         <Carousel/>
         <Footer/>
     </>

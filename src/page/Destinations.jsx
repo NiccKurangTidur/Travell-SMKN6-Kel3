@@ -72,7 +72,9 @@ const Destinations = () => {
         </nav>
 
       <div>
-        <h1 className="text-6xl mt-14 mx-14 font-bold mb-8">Keindahan pesona Indonesia yang membuatnya wajib dijelajahi</h1>
+       <h1 className="text-6xl mt-14 mx-14 font-bold mb-8 text-justify">
+       The beauty of Indonesia's charm that makes it a must-explore
+      </h1>s
         <p className="mx-14 border-b mb-14 pb-4">With a cluster of islands stretching from Sabang to Merauke, Indonesia offers a diverse range of natural, cultural, and culinary attractions that are truly enticing. The warm hospitality of the local people makes travelers feel comfortable and at home, and the introduction of authentic traditional customs further enhances the beauty of the experience. In addition, the enchanting wealth of rare flora and fauna adds another exciting element to the list of best experiences that can be enjoyed while exploring Indonesia. All of these beauties can only be found #DiIndonesiaAja.</p>
 
         

@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hero2 from '../components/Hero2';
 import Navbar from '../components/Navbar';
+import CarouselBali from '../components/CarouselDestination/CarouselBali';
 import Footer from '../components/Footer';
 import Indonesia from '../assets/indonesia.png';
 
 //image
 import LabuanBajo from '../assets/labuanbajo.jpg';
+
+
 
 const CBali = () => {
   const allImages = [
@@ -41,10 +44,34 @@ const CBali = () => {
     }
   };
 
+  
+
+  
+
   return (
     <div>
       <Navbar />
       <Hero2 />
+
+      <nav className="mx-14 mb-4">
+          <ol className="flex items-center text-gray-500">
+            <li>
+              <Link to="/" className="hover:text-gray-700">Home</Link>
+            </li>
+            <li>
+              <span className="mx-2">/</span>
+            </li>
+            <li>
+              <Link to="/destinations" className="hover:text-gray-700">Destinations</Link>
+            </li>
+            <li>
+              <span className="mx-2">/</span>
+            </li>
+            <li>
+              <Link to="/cbali" className="hover:text-gray-700">Bali</Link>
+            </li>
+          </ol>
+        </nav>
 
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
         <h1 className="text-6xl mt-14 mx-14 font-bold mb-8">Pesona Pulau Dewata dan Nusa Tenggara</h1>
@@ -93,7 +120,7 @@ const CBali = () => {
           </button>
         )}
       </div>
-
+      <CarouselBali/>
       <Footer />
     </div>
   );
