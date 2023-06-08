@@ -7,22 +7,26 @@ import Footer from '../components/Footer';
 import Indonesia from '../assets/indonesia.png';
 
 //image
-import LabuanBajo from '../assets/labuanbajo.jpg';
-
+import LabuanBajo from '../assets/labuanBajo2.jpg';
+import LabuanBajo2 from '../assets/labuanbajo.jpg';
+import NusaDua from '../assets/nusaDua .jpg';
+import TanahLot from '../assets/tanahLot.jpg';
+import Uluwatu from '../assets/uluwatu.jpeg';
+import Denpasar from '../assets/bali.jpg';
 
 
 const CBali = () => {
   const allImages = [
     { name: 'Labuan Bajo', url: LabuanBajo, path: '/labuanbajo' },
-    { name: 'Image 2', url: LabuanBajo, path: '/image2' },
-    { name: 'Image 3', url: LabuanBajo, path: '/image3' },
-    { name: 'Image 4', url: LabuanBajo, path: '/image4' },
-    { name: 'Image 5', url: LabuanBajo, path: '/image5' },
-    { name: 'Image 6', url: LabuanBajo, path: '/image6' },
-    { name: 'Image 7', url: LabuanBajo, path: '/image7' },
-    { name: 'Image 8', url: LabuanBajo, path: '/image8' },
-    { name: 'Image 9', url: LabuanBajo, path: '/image9' },
-    { name: 'Image 10', url: LabuanBajo, path: '/image10' },
+    { name: 'Nusa Dua', url: NusaDua, path: '/nusadua' },
+    { name: 'Tanah Lot', url: TanahLot, path: '/tanahlot' },
+    { name: 'Uluwatu', url: Uluwatu, path: '/uluwatu' },
+    { name: 'Denpasar', url: Denpasar, path: '/denpasar' },
+    { name: 'Labuan Bajo', url: LabuanBajo2, path: '/labuanbajo' },
+    { name: 'Nusa Dua', url: NusaDua, path: '/nusadua' },
+    { name: 'Tanah Lot', url: TanahLot, path: '/tanahlot' },
+    { name: 'Denpasar', url: Denpasar, path: '/denpasar' },
+    { name: 'Uluwatu', url: Uluwatu, path: '/uluwatu' },
   ];
 
   const [topImages, setTopImages] = useState(allImages.slice(0, 5));
@@ -73,12 +77,13 @@ const CBali = () => {
           </ol>
         </nav>
 
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-        <h1 className="text-6xl mt-14 mx-14 font-bold mb-8">Pesona Pulau Dewata dan Nusa Tenggara</h1>
+      <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+        <h1 className="text-6xl mt-14 mx-14 font-bold mb-8">The Charm of the Island of the Gods and Nusa Tenggara</h1>
         <img className='mx-14' src={Indonesia} alt="Indonesia" style={{ margin: 'auto' }} />
         <p className="mx-14 border-b mb-14 pb-4">A row of beautiful and charming aduhai beaches can only be found along the island of Bali and Nusa Tenggara. Find interesting information below!</p>
         <div className="grid mx-14 grid-cols-1 md:grid-cols-3 gap-4"></div>
 
+        <h2 className='text-left text-3xl mx-14 text-bold'>Explore Bali through the area/city</h2>
         <div className="flex flex-wrap justify-center">
           {topImages.map((image, index) => (
             <Link to={image.path} key={index}>
@@ -94,6 +99,7 @@ const CBali = () => {
           ))}
         </div>
 
+        
         {bottomImages.length > 0 && (
           <div className="flex flex-wrap justify-center mt-10">
             {bottomImages.map((image, index) => (
@@ -113,13 +119,15 @@ const CBali = () => {
 
         {showNextButton && (
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-            onClick={handleNextButtonClick}
-          >
+          className="bg-blue-500 w-min justify-center hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 mx-auto"
+          onClick={handleNextButtonClick}
+        >
             Selanjutnya
           </button>
         )}
       </div>
+      <h2 className='text-left text-3xl mx-14 -mb-14 mt-14 text-bold'>Adventure Story</h2>
+      
       <CarouselBali/>
       <Footer />
     </div>

@@ -4,6 +4,10 @@ import Navbar from '../components/Navbar';
 import Hero2 from '../components/Hero2';
 import Footer from '../components/Footer';
 import Nico from '../assets/nico.jpg';
+import Runa from '../assets/runa.jpg';
+import Ali from '../assets/ali.jpg';
+import Desta from '../assets/desta.jpg';
+import Dewi from '../assets/dewi.jpg';
 
 const TeamMember = ({ name, image }) => {
   return (
@@ -17,10 +21,10 @@ const TeamMember = ({ name, image }) => {
 const Team = () => {
   const teamMembers = [
     { name: 'Deshea Nico', image: Nico },
-    { name: 'Dewi Septiani', image: Nico },
-    { name: 'Mustofa Ali', image: Nico },
-    { name: 'Runa Aulia', image: Nico },
-    { name: 'Aira Desta', image: Nico },
+    { name: 'Dewi Septiani', image: Dewi },
+    { name: 'Mustofa Ali', image: Ali },
+    { name: 'Runa Aulia', image: Runa },
+    { name: 'Aira Desta', image: Desta },
     { name: 'Raditya Abdee', image: Nico },
     { name: 'Shoffiyah A', image: Nico },
   ];

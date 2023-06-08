@@ -53,7 +53,7 @@ const CarouselBali = () => {
         >
           {index === slide && (
             <iframe
-              className='w-screen h-screen'
+              className='w-screen h-screen mx-14'
               src={item.url}
               title='Video'
               allow='autoplay; encrypted-media'

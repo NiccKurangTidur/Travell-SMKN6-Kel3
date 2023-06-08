@@ -51,7 +51,13 @@ Indonesia is a country rich in natural beauty. From mountains, beautiful beaches
                       <option>Prambanan</option>
                       <option>Borobudur</option>
                       <option>Pulau Komodo</option>
+                      <option>Tanah Lot</option>
+                      <option>Uluwatu</option>
+                      <option>Labuan Bajo</option>
+                      <option>Nusa Dua</option>
+                      <option>Denpasar</option>
                       <option>Bromo</option>
+
                   </select>
               </div>
               <div className='flex flex-col my-4'>

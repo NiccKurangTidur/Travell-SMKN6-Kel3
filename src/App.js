@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
 // page
 import Home from './page/home';
 import Destinations from './page/Destinations';
@@ -18,6 +19,11 @@ import CBali from './contentDestination/CBali';
 
 // contentIsiDestination
 import LabuanBajo from './ContentIsiDestination/Bali/LabuanBajo';
+import Denpasar from './ContentIsiDestination/Bali/Denpasar';
+import NusaDua from './ContentIsiDestination/Bali/NusaDua';
+import TanahLot from './ContentIsiDestination/Bali/TanahLot';
+import Uluwatu from './ContentIsiDestination/Bali/Uluwatu';
+
 function App() {
   return (
       <Router>
@@ -38,6 +44,11 @@ function App() {
 
           {/* contentIsiDestination */}
           <Route path="/labuanbajo" element={<LabuanBajo/>}/>
+          <Route path="/uluwatu" element={<Uluwatu/>}/>
+          <Route path="/nusadua" element={<TanahLot/>}/>
+          <Route path="/tanahlot" element={<NusaDua/>}/>
+          <Route path="/denpasar" element={<Denpasar/>}/>
+
 
         </Routes>
       </Router>
