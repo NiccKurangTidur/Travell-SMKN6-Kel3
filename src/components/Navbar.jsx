@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BsPerson } from 'react-icons/bs';
-import { BiSearch } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import {
@@ -37,17 +36,17 @@ const Navbar = () => {
           <Link to="/destinations">Destinations</Link>
         </li>
         <li>
-          <Link to={`/travel`}>Travel</Link>
+          <Link to={`/attractions`}>Attractions</Link>
         </li>
         <li>
-          <Link to={`/cbali`}>View</Link>
+          <Link to={`/event`}>Event</Link>
         </li>
         <li>
           <Link to={`/team`}>Team</Link>
         </li>
       </ul>
       <div className='hidden md:flex'>
-        <BiSearch className='' size={20} />
+        
         <BsPerson size={20} />
       </div>
 
@@ -77,10 +76,10 @@ const Navbar = () => {
             <Link to="/travel">Travel</Link>
           </li>
           <li className='border-b'>
-            <Link to="/view">View</Link>
+            <Link to="/attractions">Attractions</Link>
           </li>
           <li className='border-b'>
-            <Link to="/team">Team</Link>
+            <Link to="/event">Event</Link>
           </li>
           <div className='flex flex-col'>
             <button className='my-6'>Search</button>

@@ -12,17 +12,17 @@ import TitleSelect from '../components/TitleSelect';
 
 const Home = () => {
   return (
-    <>
-        <Navbar/>
-        <Hero/>
-        <Destinations/>
-        <Search/>
-        <TitleSelect/>
-        <Selects/>
-        <Carousel/>
-        <Footer/>
-    </>
-  )
+    <div className="w-screen overflow-hidden">
+      <Navbar />
+      <Hero />
+      <Destinations />
+      <Search />
+      <TitleSelect />
+      <Selects />
+      <Carousel />
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;

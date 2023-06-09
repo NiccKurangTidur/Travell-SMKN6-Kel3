@@ -48,61 +48,41 @@ const CBali = () => {
     }
   };
 
-  
-
-  
-
   return (
-    <div>
+    <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
       <Navbar />
       <Hero2 />
 
       <nav className="mx-14 mb-4">
-          <ol className="flex items-center text-gray-500">
-            <li>
-              <Link to="/" className="hover:text-gray-700">Home</Link>
-            </li>
-            <li>
-              <span className="mx-2">/</span>
-            </li>
-            <li>
-              <Link to="/destinations" className="hover:text-gray-700">Destinations</Link>
-            </li>
-            <li>
-              <span className="mx-2">/</span>
-            </li>
-            <li>
-              <Link to="/cbali" className="hover:text-gray-700">Bali</Link>
-            </li>
-          </ol>
-        </nav>
+        <ol className="flex items-center text-gray-500">
+          <li>
+            <Link to="/" className="hover:text-gray-700">Home</Link>
+          </li>
+          <li>
+            <span className="mx-2">/</span>
+          </li>
+          <li>
+            <Link to="/destinations" className="hover:text-gray-700">Destinations</Link>
+          </li>
+          <li>
+            <span className="mx-2">/</span>
+          </li>
+          <li>
+            <Link to="/cbali" className="hover:text-gray-700">Bali</Link>
+          </li>
+        </ol>
+      </nav>
 
-      <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-        <h1 className="text-6xl mt-14 mx-14 font-bold mb-8">The Charm of the Island of the Gods and Nusa Tenggara</h1>
-        <img className='mx-14' src={Indonesia} alt="Indonesia" style={{ margin: 'auto' }} />
-        <p className="mx-14 border-b mb-14 pb-4">A row of beautiful and charming aduhai beaches can only be found along the island of Bali and Nusa Tenggara. Find interesting information below!</p>
-        <div className="grid mx-14 grid-cols-1 md:grid-cols-3 gap-4"></div>
+      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 16px' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+          <h1 className="text-6xl mt-14 font-bold mb-8">The Charm of the Island of the Gods and Nusa Tenggara</h1>
+          <img className='mx-14' src={Indonesia} alt="Indonesia" style={{ margin: 'auto' }} />
+          <p className="mx-14 border-b mb-14 pb-4">A row of beautiful and charming aduhai beaches can only be found along the island of Bali and Nusa Tenggara. Find interesting information below!</p>
+          <div className="grid mx-14 grid-cols-1 md:grid-cols-3 gap-4"></div>
 
-        <h2 className='text-left text-3xl mx-14 text-bold'>Explore Bali through the area/city</h2>
-        <div className="flex flex-wrap justify-center">
-          {topImages.map((image, index) => (
-            <Link to={image.path} key={index}>
-              <div className="w-40 h-56 m-4 mx-5 relative">
-                <img
-                  src={image.url}
-                  alt={image.name}
-                  className="w-full h-full object-cover rounded-md transition-all duration-300 transform hover:scale-105"
-                />
-                <p className="absolute inset-x-0 bottom-0  bg-opacity-75 text-white py-2 text-center bg-transparent">{image.name}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        
-        {bottomImages.length > 0 && (
-          <div className="flex flex-wrap justify-center mt-10">
-            {bottomImages.map((image, index) => (
+          <h2 className='text-left text-3xl mx-14 font-bold'>Explore Bali through the area/city</h2>
+          <div className="flex flex-wrap justify-center">
+            {topImages.map((image, index) => (
               <Link to={image.path} key={index}>
                 <div className="w-40 h-56 m-4 mx-5 relative">
                   <img
@@ -110,25 +90,42 @@ const CBali = () => {
                     alt={image.name}
                     className="w-full h-full object-cover rounded-md transition-all duration-300 transform hover:scale-105"
                   />
-                  <p className="absolute inset-x-0 bottom-0  bg-opacity-75 text-white py-2 text-center bg-transparent">{image.name}</p>
+                  <p className="absolute inset-x-0 bottom-0 bg-opacity-75 text-white py-2 text-center bg-transparent">{image.name}</p>
                 </div>
               </Link>
             ))}
           </div>
-        )}
 
-        {showNextButton && (
-          <button
-          className="bg-blue-500 w-min justify-center hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 mx-auto"
-          onClick={handleNextButtonClick}
-        >
-            Selanjutnya
-          </button>
-        )}
+          {bottomImages.length > 0 && (
+            <div className="flex flex-wrap justify-center mt-10">
+              {bottomImages.map((image, index) => (
+                <Link to={image.path} key={index}>
+                  <div className="w-40 h-56 m-4 mx-5 relative">
+                    <img
+                      src={image.url}
+                      alt={image.name}
+                      className="w-full h-full object-cover rounded-md transition-all duration-300 transform hover:scale-105"
+                    />
+                    <p className="absolute inset-x-0 bottom-0 bg-opacity-75 text-white py-2 text-center bg-transparent">{image.name}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+
+          {showNextButton && (
+            <button
+              className="bg-blue-500 w-min justify-center hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 mx-auto"
+              onClick={handleNextButtonClick}
+            >
+              Selanjutnya
+            </button>
+          )}
+        </div>
       </div>
-      <h2 className='text-left text-3xl mx-14 -mb-14 mt-14 text-bold'>Adventure Story</h2>
-      
-      <CarouselBali/>
+      <h2 className='text-left text-3xl mx-14 -mb-14 mt-14 font-bold'>Adventure Story</h2>
+
+      <CarouselBali />
       <Footer />
     </div>
   );

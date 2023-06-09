@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // page
 import Home from './page/home';
 import Destinations from './page/Destinations';
-import Travel from './page/Travel';
-import View from './page/View';
+import Attractions from './page/Attractions';
+import Event from './page/Event';
 import Team from './page/Team';
 
 // contentDestination
@@ -30,8 +30,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/destinations" element={<Destinations/>} />
-          <Route path="/travel" element={<Travel/>} />
-          <Route path="/view" element={<View/>} />
+          <Route path="/attractions" element={<Attractions/>} />
+          <Route path="/event" element={<Event/>} />
           <Route path="/team" element={<Team/>} />
           
           {/* contentDestination */}
