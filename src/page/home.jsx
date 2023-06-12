@@ -12,7 +12,7 @@ import TitleSelect from '../components/TitleSelect';
 
 const Home = () => {
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="overflow-hidden">
       <Navbar />
       <Hero />
       <Destinations />

@@ -9,7 +9,10 @@ const sliderData = [
     url: 'https://www.youtube.com/embed/Z5NoQg8LdDk',
   },
   {
-    url: 'https://www.youtube.com/embed/vWWA98lpSZ4',
+    url: 'https://www.youtube.com/embed/l5t9IXtTr6g',
+  },
+  {
+    url: 'https://www.youtube.com/embed/9c3XMEzYwo8',
   },
 ];
 
