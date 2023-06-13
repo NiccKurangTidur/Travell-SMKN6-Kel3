@@ -73,13 +73,13 @@ const Navbar = () => {
             <Link to="/destinations">Destinations</Link>
           </li>
           <li className='border-b'>
-            <Link to="/travel">Travel</Link>
-          </li>
-          <li className='border-b'>
             <Link to="/attractions">Attractions</Link>
           </li>
           <li className='border-b'>
             <Link to="/event">Event</Link>
+          </li>
+          <li className='border-b'>
+            <Link to="/team">Team</Link>
           </li>
           <div className='flex flex-col'>
             <button className='my-6'>Search</button>

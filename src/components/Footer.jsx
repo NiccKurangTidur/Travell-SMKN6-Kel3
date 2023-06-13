@@ -32,8 +32,8 @@ const Footer = () => {
           <ul className='text-right lg:flex'>
             <li><Link to={`/`}> Home</Link></li>
             <li><Link to={`/destinations`}> Destination</Link></li>
-            <li><Link to={`/travel`}> Travel</Link></li>
-            <li><Link to={`/view`}> View</Link></li>
+            <li><Link to={`/attractions`}> Attractions</Link></li>
+            <li><Link to={`/event`}> Event</Link></li>
             <li><Link to={`/team`}> Team</Link></li>
           </ul>
         </div>
