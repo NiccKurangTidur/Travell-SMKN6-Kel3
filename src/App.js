@@ -24,6 +24,9 @@ import NusaDua from './ContentIsiDestination/Bali/NusaDua';
 import TanahLot from './ContentIsiDestination/Bali/TanahLot';
 import Uluwatu from './ContentIsiDestination/Bali/Uluwatu';
 
+import SignIn from './components/SignIn';
+
+
 function App() {
   return (
       <Router>
@@ -48,6 +51,12 @@ function App() {
           <Route path="/nusadua" element={<TanahLot/>}/>
           <Route path="/tanahlot" element={<NusaDua/>}/>
           <Route path="/denpasar" element={<Denpasar/>}/>
+
+          <Route path="/signin" element={<SignIn/>}/>
+
+          
+
+          
 
 
         </Routes>

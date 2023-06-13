@@ -84,7 +84,7 @@ const Navbar = () => {
           <div className='flex flex-col'>
             <button className='my-6'>Search</button>
             <button>
-              <Link to="/login">Login</Link>
+              <Link to="/signin">Login</Link>
             </button>
           </div>
           <div className='flex justify-between my-6'>
